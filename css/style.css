@@ -93,12 +93,19 @@ body {
   margin-bottom: 20px;
 }
 .about__text {
-  width: 755px;
-  font-size: 17px;
+  padding: 0 5px;
+  font-size: 18px;
+  font-weight: 400;
   color: #fff;
   text-align: left;
-  line-height: 28px;
-  margin-top: 30px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+.about__text span {
+  display: block;
+  margin-bottom: 4px;
+  background-color: #5236AB;
 }
 
 .news {

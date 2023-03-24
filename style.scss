@@ -4,6 +4,7 @@ $font-main: "Inter", sans-serif;
 $font-second: "Share Tech Mono", monospace;
 
 $bg-color: #03001f;
+$pink-color: #5236AB;
 
 $container-width: 1297px;
 
@@ -113,12 +114,20 @@ body {
   }
 
   &__text {
-    width: 755px;
-    font-size: 17px;
+    padding: 0 5px;
+    font-size: 18px;
+    font-weight: 400;
     color: #fff;
     text-align: left;
-    line-height: 28px;
-    margin-top: 30px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text span {
+    display: block;
+    margin-bottom: 4px;
+    background-color: $pink-color;
   }
 }
 
