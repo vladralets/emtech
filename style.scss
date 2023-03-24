@@ -1,25 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Share+Tech+Mono&display=swap");
 
 $font-main: "Inter", sans-serif;
-$font-second: 'Share Tech Mono', monospace;
+$font-second: "Share Tech Mono", monospace;
 
-$bg-color: #03001F;
+$bg-color: #03001f;
+
+$container-width: 1297px;
 
 body {
   font-family: $font-main;
   background-color: $bg-color;
+  padding-top: 100px;
 }
 
 .container {
-  width: 1297px;
+  width: $container-width;
   margin: 0 auto;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
+  position: fixed;
+  background-color: $bg-color;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &__container {
+    width: $container-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__menu {
     display: flex;
@@ -33,6 +45,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 40px;
+  margin-right: 40px;
 
   &__item {
     list-style: none;
@@ -41,7 +54,7 @@ body {
   &__link {
     font-size: 17px;
     font-family: $font-second;
-    color: #413D67;
+    color: #413d67;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     line-height: 19px;
@@ -59,9 +72,58 @@ body {
       width: 100%;
       height: 3px;
       position: absolute;
-      background: linear-gradient(to right, #E31937, #5236AB);
+      background: linear-gradient(to right, #e31937, #5236ab);
       bottom: -11px;
       left: 0;
     }
   }
 }
+
+.about {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  &__title {
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    line-height: 54px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+
+  &__title span {
+    font-family: $font-second;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #E31937 0%, #5236AB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 58px;
+  }
+
+  &__img {
+    width: 860px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    width: 755px;
+    font-size: 17px;
+    color: #fff;
+    text-align: left;
+    line-height: 28px;
+    margin-top: 30px;
+  }
+}
+
+.news {
+  height: 100vh;
+  background-color: #5236ab;
+}
+
