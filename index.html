@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emtech</title>
+  <link rel="shortcut icon" href="./assets/emtech-favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -12,7 +13,7 @@
 <body>
   <header class="header">
     <div class="header__container">
-      <img src="./assets/Logo_emtech.svg" alt="logo" class="logo">
+      <img src="./assets/Logo_emtech.svg" alt="logo" class="header__logo">
       <nav class="header__menu">
         <ul class="nav">
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
@@ -32,19 +33,17 @@
         </span>
       </h1>
       <img src="./assets/test/temp1.jpg" alt="gif" class="about__img">
-      <p class="about__text">
+      <div class="about__text">
         <span>
           Jsme Emtech, kreativní buňka v rychlém světě informačních technologií.
         </span>
-        <br>
         <span>
           Sdílíme vášeň pro nové trendy, postupy a inovativní řešení, které jsou naší
         </span>
-        <br>
         <span>
           živou vodou. Učíme se a posouváme i všechny kolem nás.
         </span>
-      </p>
+      </div>
     </div>
   </section>
   <section class="news" id="news">
@@ -54,7 +53,10 @@
 
   </section>
   <footer class="footer">
-
+    <div class="container footer__container">
+      <img src="./assets/cgi-logo.svg" alt="cgi-logo">
+    </div>
   </footer>
+  <script src="./scripts/scroll.js"></script>
 </body>
 </html>
