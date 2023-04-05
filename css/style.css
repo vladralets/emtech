@@ -116,6 +116,59 @@ body {
   height: 100vh;
 }
 
+.career__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 31px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.career__item {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.career__item:last-child {
+  margin-bottom: 0;
+}
+.career__link {
+  text-decoration: none;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 30px;
+  line-height: 34px;
+  color: #fff;
+}
+.career__link:before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+  background-image: url(../assets/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.career__button {
+  background-color: #5236AB;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  padding: 18px 41px;
+  cursor: pointer;
+  margin: 100px auto 200px;
+  display: block;
+}
+
 .footer__container {
   padding: 30px 0 100px;
 }/*# sourceMappingURL=style.css.map */
