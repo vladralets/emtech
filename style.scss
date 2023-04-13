@@ -4,14 +4,14 @@ $font-main: "Inter", sans-serif;
 $font-second: "Share Tech Mono", monospace;
 
 $bg-color: #03001f;
-$pink-color: #5236AB;
+$pink-color: #5236ab;
 
 $container-width: 1297px;
 
 body {
   font-family: $font-main;
   background-color: $bg-color;
-  padding-top: 100px;
+  // padding-top: 100px;
 }
 
 .container {
@@ -21,7 +21,7 @@ body {
 
 .header {
   position: fixed;
-  background-color: $bg-color;
+  // background-color: $bg-color;
   top: 0;
   left: 0;
   width: 100%;
@@ -59,7 +59,7 @@ body {
   &__link {
     font-size: 17px;
     font-family: $font-second;
-    color: #413d67;
+    color: #bebadd;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     line-height: 19px;
@@ -85,27 +85,34 @@ body {
 }
 
 .about {
+  &__bg {
+    position: absolute;
+    top: -10;
+    z-index: -5;
+    width: 100%;
+  }
 
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   &__title {
-    font-size: 50px;
     font-weight: 400;
     color: #fff;
     text-align: center;
-    line-height: 54px;
-    margin-top: 100px;
+    font-size: 48px;
+    line-height: 58px;
+    margin-top: 180px;
     margin-bottom: 60px;
+    letter-spacing: 0.22em;
   }
 
   &__title span {
     font-family: $font-second;
     text-transform: uppercase;
-    background: linear-gradient(180deg, #E31937 0%, #5236AB 100%);
+    background: linear-gradient(180deg, #e31937 0%, #5236ab 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -118,38 +125,84 @@ body {
   }
 
   &__text {
-    font-size: 18px;
-    font-weight: 400;
-    color: #fff;
-    text-align: left;
-    line-height: 1.5;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 24px 0 70px;
+    gap: 4px;
   }
 
   &__text span {
-    padding: 0 16px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    padding: 0 8px;
+    font-size: 18px;
+    line-height: 36px;
     display: block;
-    margin-bottom: 4px;
+    width: fit-content;
     background-color: $pink-color;
+  }
+
+  &__button {
+    background: linear-gradient(180deg, #e31937 0%, #5236ab 100%);
+    border-radius: 15px;
+    border: none;
+    padding: 10px 36.5px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 100px;
+  }
+}
+
+.thesis {
+  background-color: white;
+
+  &__img {
+    width: 1125px;
+    margin: 0 auto;
+    display: block;
   }
 }
 
 .news {
-  height: 100vh;
+  &__title {
+    text-align: center;
+    font-family: "Share Tech Mono";
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: 0.12em;
+    color: #ffffff;
+    margin-top: 66px;
+  }
+}
+
+.team {
+  background: linear-gradient(180deg, #E31937 0%, #5236AB 100%);
+  height: 700px;
 }
 
 .career {
   &__container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 31px;
-    width: fit-content;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
   }
+
+  &__title {
+    text-align: center;
+    font-family: "Share Tech Mono";
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: 0.12em;
+    color: #ffffff;
+    margin: 60px 0 100px;
+  }
+
   &__item {
     width: 100%;
     margin-bottom: 20px;
@@ -163,8 +216,8 @@ body {
   &__link {
     text-decoration: none;
     font-family: $font-second;
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 24px;
+    line-height: 29px;
     color: #fff;
     &:before {
       content: "";
@@ -178,25 +231,78 @@ body {
       background-position: center;
     }
   }
+
+  &__question {
+    font-family: $font-second;
+    text-align: center;
+    margin: 40px 0 25px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    &:before {
+      content: "";
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s ease;
+      background-image: url(../assets/arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
   &__button {
-    background-color: $pink-color;
-    font-weight: 500;
-    font-size: 13px;
+    background: linear-gradient(180deg, #e31937 0%, #5236ab 100%);
+    display: block;
+    border-radius: 15px;
+    border: none;
+    padding: 10px 36.5px;
+    font-weight: 600;
     line-height: 20px;
     letter-spacing: 0.1px;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 5px;
-    padding: 18px 41px;
+    color: white;
     cursor: pointer;
-    margin: 100px auto 200px;
+    margin: 0 auto 50px;
+  }
+
+  &__img {
     display: block;
+    margin: 0 auto 80px;
   }
 }
 
 .footer {
+  background: #0c0736;
+  padding: 32px 0;
+
   &__container {
-    padding: 30px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__atr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 51px;
+    margin-right: 32px;
+  }
+
+  &__copyright {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+  }
+
+  &__link {
+    line-height: 19px;
+    color: white;
+    text-decoration: none;
   }
 }
-

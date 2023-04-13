@@ -21,59 +21,78 @@
         <nav class="header__menu">
           <ul class="nav">
             <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+              <a href="#about" class="nav__link">O nás</a>
             </li>
             <li class="nav__item">
-              <a href="#news" class="nav__link">News</a>
+              <a href="#news" class="nav__link">Co je nového</a>
             </li>
             <li class="nav__item">
-              <a href="#career" class="nav__link">Career</a>
+              <a href="#team" class="nav__link">Náš tým</a>
+            </li>
+            <li class="nav__item">
+              <a href="#career" class="nav__link">Pracuj s námi</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <section class="about" id="about">
+      <img class="about__bg" src="./assets/about-bg.png" alt="bg">
       <div class="container about__container">
         <h1 class="about__title">
           While we work,
           <br />
           <span> we create </span>
         </h1>
-        <img src="./assets/test/temp1.jpg" alt="gif" class="about__img" />
+        <img src="./assets/about-avatars.png" alt="team" class="about__img" loading="lazy"/>
         <div class="about__text">
           <span>
-            Jsme Emtech, kreativní buňka v rychlém světě informačních
-            technologií.
+            Jsme Emtech, kreativní buňka v rychlém světě informačních technologií.
           </span>
           <span>
-            Sdílíme vášeň pro nové trendy, postupy a inovativní řešení, které
-            jsou naší
+            Sdílíme vášeň pro nové trendy, postupy a inovativní řešení, které jsou 
           </span>
-          <span> živou vodou. Učíme se a posouváme i všechny kolem nás. </span>
+          <span>naší živou vodou. Učíme se a posouváme i všechny kolem nás.</span>
         </div>
+        <button class="about__button">
+          Pojďme na kafe!
+        </button>
+      </div>
+    </section>
+    <section class="thesis" id="about">
+      <div class="container">
+        <img class="thesis__img" src="./assets/about-team.png" alt="team">
       </div>
     </section>
     <section class="news" id="news">
-      <div class="container">
-        <h2 style="color: aliceblue">News</h2>
-      </div>
+      <h2 class="news__title">Co je nového</h2>
+      <div style="height: 400px;"></div>
+    </section>
+    <section class="team" id="team">
+      
     </section>
     <section class="career" id="career">
       <div class="container">
+        <h2 class="career__title">Pracuj s námi</h2>
         <div class="career__container">
-          <a href="/" class="career__link"> Kotlin developer;</a>
-          <a href="/" class="career__link"> Swift developer;</a>
-          <a href="/" class="career__link"> UI/UX Designer;</a>
+          <a href="/" class="career__link">Kotlin developer;</a>
+          <a href="/" class="career__link">Swift developer;</a>
+          <a href="/" class="career__link">UI/UX Designer;</a>
         </div>
+        <p class="career__question">Nenašel si to, co hledáš?</p>
         <button class="career__button">
-          See all opened positions
+          Pojďme na kafe!
         </button>
+        <img src="./assets/career-team.png" alt="team" class="career__img">
       </div>
     </section>
     <footer class="footer">
       <div class="container footer__container">
-        <img src="./assets/cgi-logo.svg" alt="cgi-logo" />
+        <div class="footer__atr">
+          <img src="./assets/cgi-logo.svg" alt="cgi-logo" class="footer__logo" />
+          <p class="footer__copyright">© 2023 CGI Inc.</p>
+        </div>
+        <a href="mailto:des.cz@cgi.com" class="footer__link">des.cz@cgi.com</a>
       </div>
     </footer>
     <script src="./scripts/scroll.js"></script>
