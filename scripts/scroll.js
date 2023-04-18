@@ -8,19 +8,33 @@ logo.addEventListener('click', () => {
   });
 });
 
-// Accordion
+// scroll header
 
-const titles = document.querySelectorAll('.career__title');
-const descriptions = document.querySelectorAll('.career__description');
+const header = document.querySelector('.header-scroll');
 
-titles.forEach((title, index) => {
-  title.addEventListener('click', () => {
-    // Скрыть текущий открытый элемент гармошки
-    const currentDescription = document.querySelector('.career__description.show');
-    if (currentDescription && currentDescription !== descriptions[index]) {
-      currentDescription.classList.remove('show');
+window.onscroll = function() {
+  if (window.pageYOffset >= 200) {
+    header.classList.add('active'); // показываем хедер, если страница прокручена на 200px или более
+  } else {
+    header.classList.remove('active'); // скрываем хедер, если страница прокручена менее, чем на 200px
+  }
+}
+
+const navLinks = header.querySelectorAll('a');
+const sections = document.querySelectorAll('section');
+
+function setActiveLink() {
+  const currentScrollPos = window.pageYOffset;
+  sections.forEach(section => {
+    if (section.offsetTop - header.offsetHeight <= currentScrollPos && section.offsetTop + section.offsetHeight - header.offsetHeight > currentScrollPos) {
+      navLinks.forEach(link => {
+        link.classList.remove('nav-active');
+        if (section.getAttribute('id') === link.getAttribute('href').substring(1)) {
+          link.classList.add('nav-active'); // добавляем класс "active" к ссылке, связанной с текущим блоком
+        }
+      });
     }
-    // Показать выбранный элемент гармошки
-    descriptions[index].classList.toggle('show');
   });
-});
+}
+
+window.addEventListener('scroll', setActiveLink);
