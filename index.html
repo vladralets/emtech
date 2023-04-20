@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -146,7 +147,13 @@
         </div>
       </div>
     </section>
-    <section class="team" id="team"></section>
+    <section class="team" id="team">
+      <h3 class="team__title">Náš tým</h3>
+      <div class="carousel__container">
+        <div class="carousel">
+        </div>
+      </div>
+    </section>
     <section class="career" id="career">
       <div class="container">
         <h2 class="career__title">Pracuj s námi</h2>
@@ -156,7 +163,12 @@
           <a href="/" class="career__link">UI/UX Designer;</a>
         </div>
         <p class="career__question">Nenašel si to, co hledáš?</p>
-        <button class="career__button">Pojďme na kafe!</button>
+        <button
+          class="career__button"
+          onclick="location.href='mailto:des.cz@cgi.com'"
+        >
+          Pojďme na kafe!
+        </button>
         <img src="./assets/career-team.png" alt="team" class="career__img" />
       </div>
     </section>
@@ -173,6 +185,10 @@
         <a href="mailto:des.cz@cgi.com" class="footer__link">des.cz@cgi.com</a>
       </div>
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./scripts/slick.min.js"></script>
+    <script src="./scripts/carousel.js"></script>
     <script src="./scripts/scroll.js"></script>
   </body>
 </html>

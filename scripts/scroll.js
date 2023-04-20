@@ -38,3 +38,4 @@ function setActiveLink() {
 }
 
 window.addEventListener('scroll', setActiveLink);
+
