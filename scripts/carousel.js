@@ -34,7 +34,7 @@ $(document).ready(function(){
     autoplaySpeed: 1500,
     arrows: false,
     centerMode: true,
-    focusOnSelect: true,
+    focusOnSelect: false,
     slidesToShow: 9,
     // centerPadding: '60px',
     // responsive: [
