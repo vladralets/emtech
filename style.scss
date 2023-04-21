@@ -264,7 +264,7 @@ body {
 
 .team {
   background: linear-gradient(180deg, #e31937 0%, #5236ab 100%);
-  height: 700px;
+  height: 530px; // add 400px
   padding-top: 64px;
   padding-bottom: 70px;
 
@@ -291,7 +291,7 @@ body {
   }
 
   &__item {
-    width: 240px;
+    width: 140px;
     margin-right: 25px;
     display: flex !important;
     flex-direction: column;
@@ -303,7 +303,7 @@ body {
   }
 
   &__item.slick-center img {
-    width: 300px;
+    width: 200px;
   }
 
   &__item.slick-center div {
@@ -311,7 +311,7 @@ body {
   }
 
   &__img {
-    width: 200px;
+    width: 140px;
   }
 
   &__item-desc {
