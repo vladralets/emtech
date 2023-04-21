@@ -1,4 +1,4 @@
-const logo = document.querySelector('.header__logo');
+const logo = document.querySelector('#logo-white');
 
 logo.addEventListener('click', () => {
   window.scrollTo({
