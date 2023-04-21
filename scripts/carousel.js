@@ -35,7 +35,7 @@ $(document).ready(function(){
     arrows: false,
     centerMode: true,
     focusOnSelect: false,
-    slidesToShow: 15,
+    slidesToShow: 13,
     // centerPadding: '60px',
     // responsive: [
     //   {
