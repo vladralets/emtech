@@ -31,7 +31,7 @@ for (let i = 1; i <= 39; i++) {
 $(document).ready(function(){
   $('.carousel').slick({
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 1600,
     arrows: false,
     centerMode: true,
     focusOnSelect: false,
