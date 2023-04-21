@@ -95,14 +95,14 @@ body {
 }
 
 .active {
- top: 0;
+  top: 0;
 }
 
 .nav-scroll {
   &__link {
     font-size: 17px;
     font-family: $font-second;
-    color: #03001F;
+    color: #03001f;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     line-height: 19px;
@@ -110,7 +110,7 @@ body {
     position: relative;
 
     &:hover {
-      color: #E31937;
+      color: #e31937;
       text-decoration: none;
     }
   }
@@ -220,12 +220,13 @@ body {
     width: 240px;
     padding: 56px 32px;
     border: 2px solid transparent;
-    border-image: linear-gradient(to bottom, #E31937, #5236AB) 2;
+    border-image: linear-gradient(to bottom, #e31937, #5236ab) 2;
     margin-top: 96px;
+    transition: transform 0.3s ease-in-out;
   }
 
   &__item:nth-child(even) {
-    border-image: linear-gradient(to top, #E31937, #5236AB) 2;
+    border-image: linear-gradient(to top, #e31937, #5236ab) 2;
   }
 
   &__item:nth-child(2) {
@@ -241,6 +242,21 @@ body {
   &__item:nth-child(4) {
     margin-bottom: 96px;
     margin-top: 0;
+  }
+
+  &__item:hover {
+    border-image: none;
+    background-color: white;
+    border-radius: 12px;
+    transform: rotate(2deg);
+  }
+
+  &__item:hover .news__title {
+    color: #03001f;
+  }
+
+  &__item:hover .news__description {
+    color: #03001f;
   }
 
   &__title {
@@ -270,7 +286,7 @@ body {
 
   &__title {
     text-align: center;
-    font-family: 'Share Tech Mono';
+    font-family: "Share Tech Mono";
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
@@ -317,11 +333,6 @@ body {
     transition: width 0.6s ease-in-out;
   }
 
-  .carousel__item:not(.slick-center) div {
-    display: none;
-    transition: width 0.6s ease-in-out;
-  }
-
   &__img {
     width: 140px;
   }
@@ -337,14 +348,14 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     margin: 10px 0 5px;
   }
 
   &__position {
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 12px;
     line-height: 18px;
   }

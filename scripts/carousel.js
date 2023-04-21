@@ -34,7 +34,7 @@ $(document).ready(function(){
     autoplaySpeed: 1600,
     arrows: false,
     centerMode: true,
-    focusOnSelect: false,
+    focusOnSelect: true,
     slidesToShow: 9,
   });
 });
