@@ -11,17 +11,19 @@ $container-width: 1297px;
 body {
   font-family: $font-main;
   background-color: $bg-color;
-  // padding-top: 100px;
 }
 
 .container {
   width: $container-width;
   margin: 0 auto;
+
+  @media (max-width: 480px) {
+    width: 290px;
+  }
 }
 
 .header {
   position: absolute;
-  // background-color: $bg-color;
   top: 0;
   left: 0;
   width: 100%;
@@ -37,6 +39,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 470px) {
+      margin: 0;
+      width: 290px;
+    }
   }
 
   &__menu {
@@ -53,6 +60,10 @@ body {
   transition: top 0.3s;
   width: 100%;
   z-index: 5;
+
+  @media (max-width: 470px) {
+    display: none;
+  }
 }
 
 .nav {
@@ -61,6 +72,9 @@ body {
   align-items: center;
   gap: 40px;
   margin-right: 40px;
+  @media (max-width: 470px) {
+    display: none;
+  }
 
   &__item {
     list-style: none;
@@ -133,12 +147,21 @@ body {
     top: -10;
     z-index: -5;
     width: 100%;
+
+    @media (max-width: 470px) {
+      display: none;
+    }
   }
 
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: start;
+
+    @media (max-width: 470px) {
+
+    }
   }
 
   &__title {
@@ -150,6 +173,17 @@ body {
     margin-top: 180px;
     margin-bottom: 60px;
     letter-spacing: 0.22em;
+
+    @media (max-width: 470px) {
+     font-size: 28px;   
+     margin-top: 58px;
+    }
+
+    br {
+      @media (max-width: 470px) {
+        display: none;
+      }
+    }
   }
 
   &__title span {
@@ -165,6 +199,10 @@ body {
   &__img {
     width: 860px;
     margin-bottom: 20px;
+
+    @media (max-width: 470px) {
+      width: 100%;   
+    }
   }
 
   &__text {
@@ -191,6 +229,10 @@ body {
 .thesis {
   background-color: white;
 
+  @media (max-width: 470px) {
+   display: none;     
+  }
+
   &__img {
     width: 1125px;
     margin: 0 auto;
@@ -199,6 +241,9 @@ body {
 }
 
 .news {
+  @media (max-width: 470px) {
+   display: none;     
+  }
   &__header {
     text-align: center;
     font-family: "Share Tech Mono";
@@ -284,6 +329,10 @@ body {
   padding-top: 64px;
   padding-bottom: 70px;
 
+  @media (max-width: 470px) {
+   display: none;     
+  }
+
   &__title {
     text-align: center;
     font-family: "Share Tech Mono";
@@ -300,6 +349,10 @@ body {
 .carousel {
   display: flex;
   align-items: center;
+
+  @media (max-width: 470px) {
+    display: none;     
+   }
 
   &__container {
     overflow: hidden;
@@ -362,6 +415,9 @@ body {
 }
 
 .career {
+  @media (max-width: 470px) {
+    display: none;     
+   }
   &__container {
     display: flex;
     align-items: center;
@@ -440,6 +496,10 @@ body {
 .footer {
   background: #0c0736;
   padding: 32px 0;
+
+  @media (max-width: 470px) {
+    display: none;     
+   }
 
   &__container {
     display: flex;
