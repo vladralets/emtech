@@ -151,7 +151,7 @@ body {
   font-size: 48px;
   line-height: 58px;
   margin-top: 180px;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   letter-spacing: 0.22em;
 }
 @media (max-width: 470px) {
@@ -190,6 +190,11 @@ body {
   margin: 24px 0 100px;
   gap: 4px;
 }
+@media (max-width: 470px) {
+  .about__text {
+    display: none;
+  }
+}
 .about__text span {
   font-weight: 400;
   color: #fff;
@@ -201,6 +206,20 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   background-color: #5236ab;
+}
+.about__text-mobile {
+  font-size: 13px;
+  line-height: 22px;
+  color: #fff;
+  text-align: center;
+  width: 250px;
+  background-color: #5236ab;
+  padding: 10px 15px;
+}
+@media (min-width: 471px) {
+  .about__text-mobile {
+    display: none;
+  }
 }
 
 .thesis {
