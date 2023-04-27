@@ -151,13 +151,14 @@ body {
   font-size: 48px;
   line-height: 58px;
   margin-top: 180px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
   letter-spacing: 0.22em;
 }
 @media (max-width: 470px) {
   .about__title {
     font-size: 28px;
     margin-top: 58px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 470px) {
