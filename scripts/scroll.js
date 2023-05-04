@@ -12,11 +12,11 @@ logo.addEventListener('click', () => {
 
 const header = document.querySelector('.header-scroll');
 
-window.onscroll = function() {
+window.onscroll = function () {
   if (window.pageYOffset >= 200) {
-    header.classList.add('active'); // показываем хедер, если страница прокручена на 200px или более
+    header.classList.add('active');
   } else {
-    header.classList.remove('active'); // скрываем хедер, если страница прокручена менее, чем на 200px
+    header.classList.remove('active');
   }
 }
 
@@ -30,7 +30,7 @@ function setActiveLink() {
       navLinks.forEach(link => {
         link.classList.remove('nav-active');
         if (section.getAttribute('id') === link.getAttribute('href').substring(1)) {
-          link.classList.add('nav-active'); // добавляем класс "active" к ссылке, связанной с текущим блоком
+          link.classList.add('nav-active');
         }
       });
     }
@@ -39,3 +39,35 @@ function setActiveLink() {
 
 window.addEventListener('scroll', setActiveLink);
 
+const links = document.querySelectorAll('.nav__link');
+
+links.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const targetId = link.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    const headerHeight = document.querySelector('.header-scroll').offsetHeight;
+    const targetPosition = targetSection.offsetTop - headerHeight;
+    console.log(targetSection.offsetTop, headerHeight, targetPosition);
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
+  });
+});
+
+const headerLinks = document.querySelectorAll('.nav-scroll__link');
+
+headerLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const targetId = link.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    const headerHeight = document.querySelector('.header-scroll').offsetHeight;
+    const targetPosition = targetSection.offsetTop - headerHeight;
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
+  });
+});

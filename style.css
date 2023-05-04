@@ -237,10 +237,8 @@ body {
   display: block;
 }
 
-@media (max-width: 470px) {
-  .news {
-    display: none;
-  }
+.news {
+  padding-top: 64px;
 }
 .news__header {
   text-align: center;
@@ -249,7 +247,6 @@ body {
   line-height: 54px;
   letter-spacing: 0.12em;
   color: #ffffff;
-  margin-top: 66px;
 }
 .news__wrapper {
   display: flex;
@@ -394,10 +391,8 @@ body {
   line-height: 18px;
 }
 
-@media (max-width: 470px) {
-  .career {
-    display: none;
-  }
+.career {
+  padding-top: 64px;
 }
 .career__container {
   display: flex;
@@ -412,7 +407,7 @@ body {
   line-height: 54px;
   letter-spacing: 0.12em;
   color: #ffffff;
-  margin: 60px 0 100px;
+  margin-bottom: 100px;
 }
 .career__item {
   width: 100%;
