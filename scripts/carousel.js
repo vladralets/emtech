@@ -31,10 +31,37 @@ for (let i = 1; i <= 39; i++) {
 $(document).ready(function(){
   $('.carousel').slick({
     autoplay: true,
-    autoplaySpeed: 1600,
+    autoplaySpeed: 1700,
     arrows: false,
     centerMode: true,
     focusOnSelect: true,
+    pauseOnFocus: false,
+    infinite: true,
+    responsive: [
+
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 7,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+        }
+      }
+    ],
+
     slidesToShow: 9,
+    speed: 1000,
+    variableWidth: true,
+
   });
 });
