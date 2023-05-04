@@ -11,6 +11,7 @@ $container-width: 1297px;
 body {
   font-family: $font-main;
   background-color: $bg-color;
+  margin: 0 auto;
 }
 
 .container {
@@ -31,6 +32,10 @@ body {
   &__logo {
     cursor: pointer;
     width: 215px;
+
+    @media (max-width: 470px) {
+      width: 132px;
+    }
   }
 
   &__container {
@@ -39,11 +44,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @media (max-width: 470px) {
-      margin: 0;
-      width: 290px;
-    }
   }
 
   &__menu {

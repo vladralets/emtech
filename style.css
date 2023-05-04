@@ -2,6 +2,7 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: #03001f;
+  margin: 0 auto;
 }
 
 .container {
@@ -24,18 +25,17 @@ body {
   cursor: pointer;
   width: 215px;
 }
+@media (max-width: 470px) {
+  .header__logo {
+    width: 132px;
+  }
+}
 .header__container {
   width: 1297px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-@media (max-width: 470px) {
-  .header__container {
-    margin: 0;
-    width: 290px;
-  }
 }
 .header__menu {
   display: flex;
