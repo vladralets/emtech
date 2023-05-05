@@ -1,3 +1,61 @@
+const avatars = [
+  {
+    name: "Lukáš",
+    position: "Automatizačník a obláčkový vývojář",
+    img: "./assets/new-avatars/Lukáš, automatizačník a obláčkový vývojář.png",
+  },
+  {
+    name: "Filip",
+    position: "Architekt a zástupce kapitána",
+    img: "./assets/new-avatars/Filip, Architekt a zástupce kapitána.png",
+  },
+  {
+    name: "Hanča",
+    position: "vývojář",
+    img: "./assets/new-avatars/Hanča, vývojář.png",
+  },
+  {
+    name: "Tomík",
+    position: "Tester",
+    img: "./assets/new-avatars/Tomík, Tester.png",
+  },
+  {
+    name: "Vlad",
+    position: "Frontend vývojář",
+    img: "./assets/new-avatars/Vlad, Frontend vývojář.png",
+  },
+  {
+    name: "Pavel",
+    position: "Architekt",
+    img: "./assets/new-avatars/Pavel, Architekt.png",
+  },
+  {
+    name: "Silvi",
+    position: "UX",
+    img: "./assets/new-avatars/Silvi, UX.png",
+  },
+  {
+    name: "Honza",
+    position: "Frontend vývojář",
+    img: "./assets/new-avatars/Honza, Frontend vývojář.png",
+  },
+  {
+    name: "Míra",
+    position: "UX",
+    img: "./assets/new-avatars/Míra, UX.png",
+  },
+  {
+    name: "Jakub",
+    position: "iOS",
+    img: "./assets/new-avatars/Jakub, iOS.png",
+  },
+  {
+    name: "Vlad",
+    position: "Frontend vývojář",
+    img: "./assets/new-avatars/Vladyslav, Frontend vývojář.png",
+  },
+];
+
 const carouselDiv = document.querySelector(".carousel");
 
 for (let i = 1; i <= 39; i++) {
@@ -5,8 +63,8 @@ for (let i = 1; i <= 39; i++) {
   carouselItem.classList.add("carousel__item");
 
   const img = document.createElement("img");
-  img.src = `./assets/avatars/avatar${i}.png`;
-  img.alt = "avatar";
+  img.src = avatars[i % avatars.length].img;
+  img.alt = avatars[i % avatars.length].name;
   img.classList.add("carousel__img");
   carouselItem.appendChild(img);
 
@@ -15,12 +73,12 @@ for (let i = 1; i <= 39; i++) {
 
   const name = document.createElement("p");
   name.classList.add("carousel__name");
-  name.textContent = "Ім`я";
+  name.textContent = avatars[i % avatars.length].name;
   itemDesc.appendChild(name);
 
   const position = document.createElement("p");
   position.classList.add("carousel__position");
-  position.textContent = "Посада";
+  position.textContent = avatars[i % avatars.length].position;
   itemDesc.appendChild(position);
 
   carouselItem.appendChild(itemDesc);
