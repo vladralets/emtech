@@ -626,6 +626,7 @@ body {
 @media (max-width: 470px) {
   .footer__logo {
     margin: 0 0 20px 0;
+    width: 60%;
   }
 }
 .footer__copyright {
