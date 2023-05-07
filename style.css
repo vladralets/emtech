@@ -3,6 +3,11 @@ body {
   font-family: "Inter", sans-serif;
   background-color: #03001f;
 }
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 
 .container {
   width: 1297px;
