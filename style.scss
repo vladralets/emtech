@@ -449,9 +449,9 @@ body {
   display: flex;
   align-items: center;
 
-  @media (max-width: 470px) {
-    display: none;     
-   }
+  // @media (max-width: 470px) {
+  //   display: none;     
+  //  }
 
   &__container {
     overflow: hidden;
@@ -514,6 +514,14 @@ body {
 }
 
 .career {
+  .container {
+    @media (max-width: 470px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;;
+    }
+  }
+
   padding-top: 64px;
   &__container {
     display: flex;
@@ -523,7 +531,9 @@ body {
 
     @media (max-width: 470px) {
       flex-direction: column;
-      gap: 0;  
+      gap: 35px;
+      align-items: flex-start;
+      width: fit-content;
     }
   }
 
@@ -535,6 +545,12 @@ body {
     letter-spacing: 0.12em;
     color: #ffffff;
     margin-bottom:100px;
+
+    @media (max-width: 470px) {
+      font-size: 30px;
+      line-height: 34px;
+      margin-bottom: 30px;
+    }
   }
 
   &__item {
@@ -563,6 +579,11 @@ body {
       background-image: url(../assets/arrow.svg);
       background-repeat: no-repeat;
       background-position: center;
+
+      @media (max-width: 470px) {
+        width: 27px;
+        height: 27px;
+      }
     }
   }
 
@@ -573,6 +594,11 @@ body {
     font-size: 24px;
     line-height: 29px;
     color: #fff;
+
+    @media (max-width: 470px) {
+      font-size: 20px;
+      line-height: 125%;
+    }
   }
 
   &__button {
@@ -603,25 +629,38 @@ body {
   background: #0c0736;
   padding: 32px 0;
 
-  @media (max-width: 470px) {
-    display: none;     
-  }
-
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 470px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;     
+    }
   }
 
   &__atr {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @media (max-width: 470px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
   }
 
   &__logo {
     width: 51px;
     margin-right: 32px;
+
+    @media (max-width: 470px) {
+      margin: 0 0 20px 0;   
+    }
   }
 
   &__copyright {

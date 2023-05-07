@@ -423,11 +423,6 @@ body {
   display: flex;
   align-items: center;
 }
-@media (max-width: 470px) {
-  .carousel {
-    display: none;
-  }
-}
 .carousel__container {
   overflow: hidden;
   padding-bottom: 70px;
@@ -481,6 +476,13 @@ body {
 .career {
   padding-top: 64px;
 }
+@media (max-width: 470px) {
+  .career .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .career__container {
   display: flex;
   align-items: center;
@@ -490,7 +492,10 @@ body {
 @media (max-width: 470px) {
   .career__container {
     flex-direction: column;
-    gap: 0;
+    gap: 35px;
+    align-items: flex-start;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 .career__title {
@@ -501,6 +506,13 @@ body {
   letter-spacing: 0.12em;
   color: #ffffff;
   margin-bottom: 100px;
+}
+@media (max-width: 470px) {
+  .career__title {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 30px;
+  }
 }
 .career__item {
   width: 100%;
@@ -530,6 +542,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (max-width: 470px) {
+  .career__link:before {
+    width: 27px;
+    height: 27px;
+  }
+}
 .career__question {
   font-family: "Share Tech Mono", monospace;
   text-align: center;
@@ -537,6 +555,12 @@ body {
   font-size: 24px;
   line-height: 29px;
   color: #fff;
+}
+@media (max-width: 470px) {
+  .career__question {
+    font-size: 20px;
+    line-height: 125%;
+  }
 }
 .career__button {
   background: linear-gradient(90deg, #e31937 0%, #5236ab 100%);
@@ -565,24 +589,39 @@ body {
   background: #0c0736;
   padding: 32px 0;
 }
-@media (max-width: 470px) {
-  .footer {
-    display: none;
-  }
-}
 .footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 470px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .footer__atr {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+@media (max-width: 470px) {
+  .footer__atr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
 .footer__logo {
   width: 51px;
   margin-right: 32px;
+}
+@media (max-width: 470px) {
+  .footer__logo {
+    margin: 0 0 20px 0;
+  }
 }
 .footer__copyright {
   font-weight: 400;
