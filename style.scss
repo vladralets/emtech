@@ -430,9 +430,8 @@ body {
   padding-top: 64px;
   padding-bottom: 70px;
 
-  @media (max-width: 470px) {
-   display: none;     
-  }
+  // @media (max-width: 470px) {
+  // }
 
   &__title {
     text-align: center;

@@ -407,11 +407,6 @@ body {
   padding-top: 64px;
   padding-bottom: 70px;
 }
-@media (max-width: 470px) {
-  .team {
-    display: none;
-  }
-}
 .team__title {
   text-align: center;
   font-family: "Share Tech Mono";
