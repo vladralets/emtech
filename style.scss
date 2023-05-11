@@ -252,6 +252,106 @@ body {
 .thesis {
   background-color: white;
 
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 53px;
+    gap: 22px;
+  }
+
+  &__line {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__line:nth-of-type(2) .thesis__item {
+    flex-direction: row-reverse;
+  }
+
+  &__line:nth-of-type(3) .thesis__item {
+    flex-direction: row-reverse;
+  }
+
+  &__line:nth-of-type(4) .thesis__item {
+    flex-direction: row-reverse;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__title {
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: $bg-color;
+    margin: 0 21px;
+  }
+
+  &__content {
+    width: 75px;
+    // width: 365px;
+    border-radius: 5px;
+  }
+
+  &__item:nth-of-type(2) .thesis__content {
+    width: 126px;
+  }
+
+  &__item:nth-of-type(3) .thesis__content {
+    width: 92px;
+  }
+
+  &__item:nth-of-type(4) .thesis__content {
+    width: 92px;
+  }
+
+  &__item:nth-of-type(5) .thesis__content {
+    width: 92px;
+  }
+
+  &__item:nth-of-type(6) .thesis__content {
+    width: 92px;
+  }
+
+  &__item:nth-of-type(7) .thesis__content {
+    width: 92px;
+  }
+  &__item:nth-of-type(8) .thesis__content {
+    width: 92px;
+  }
+  &__item:nth-of-type(9) .thesis__content {
+    width: 92px;
+  }
+  &__item:nth-of-type(10) .thesis__content {
+    width: 92px;
+  }
+
+  &__icon {
+    width: 100%;
+    height: 22px;
+    border-radius: 5px;
+    background-image: url("./assets/thesis-bg.png");
+    background-position: center;
+  }
+
+  &__text {
+    display: none;
+    position: absolute;
+    width: 365px;
+    box-sizing: border-box;
+    padding: 32px 25px;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14)) drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.12));
+  }
+
+
   &__img {
     width: 1125px;
     margin: 0 auto;
@@ -274,9 +374,14 @@ body {
 }
 
 .thesis-mob {
+  display: none;
   width: 293px;
   margin: 0 auto;
   padding-top: 43px;
+
+  @media (max-width: 470px) {
+    display: block;
+  }
 
   &__item {
     margin-bottom: 5px;
@@ -505,10 +610,6 @@ body {
 .carousel {
   display: flex;
   align-items: center;
-
-  // @media (max-width: 470px) {
-  //   display: none;     
-  //  }
 
   &__container {
     overflow: hidden;
