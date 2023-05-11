@@ -412,7 +412,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 290px;
-  margin: 0 auto;
+  margin: 0 auto 25px;
 }
 .news-mob__item {
   padding: 56px 32px;
