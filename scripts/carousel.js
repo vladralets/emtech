@@ -54,6 +54,41 @@ const avatars = [
     position: "Frontend vývojář",
     img: "./assets/new-avatars/Vladyslav, Frontend vývojář.png",
   },
+  {
+    name: "Honza",
+    position: "Frontend vývojář",
+    img: "./assets/new-avatars/Honza, Vývojář počítačového vidění.png",
+  },
+  {
+    name: "Tom",
+    position: "Tester",
+    img: "./assets/new-avatars/Tom, Tester.png",
+  },
+  {
+    name: "Roman",
+    position: "Vývojář softwaru",
+    img: "./assets/new-avatars/Roman, Vývojář softwaru.png",
+  },
+  {
+    name: "Magdaléna",
+    position: "Vývojář",
+    img: "./assets/new-avatars/Magdaléna, Vývojář.png",
+  },
+  {
+    name: "Vašek",
+    position: "Frontend vývojář",
+    img: "./assets/new-avatars/Vašek, Frontend vývojář.png",
+  },
+  {
+    name: "Martin",
+    position: "Kapitán, vizionář",
+    img: "./assets/new-avatars/Martin, Kapitán, vizionář.png",
+  },
+  {
+    name: "Táňa",
+    position: "RPA vývojář",
+    img: "./assets/new-avatars/Táňa, RPA vývojář.png",
+  },
 ];
 
 const carouselDiv = document.querySelector(".carousel");
