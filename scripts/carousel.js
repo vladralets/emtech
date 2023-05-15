@@ -115,11 +115,6 @@ const avatars = [
     img: "./assets/new-avatars/Adam, Flutter vývojář.png",
   },
   {
-    name: "Adam",
-    position: "Flutter vývojář",
-    img: "./assets/new-avatars/Adam, Flutter vývojář.png",
-  },
-  {
     name: "Přemek",
     position: "UX kapitán",
     img: "./assets/new-avatars/Přemek, UX kapitán.png",
@@ -138,6 +133,66 @@ const avatars = [
     name: "Pavel",
     position: "Vývojář",
     img: "./assets/new-avatars/Pavel, Vývojář.png",
+  },
+  {
+    name: "Zdeněk",
+    position: "Architekt, zástupce kapitána",
+    img: "./assets/new-avatars/Zdeněk, Architekt, zástupce kapitána.png",
+  },
+  {
+    name: "Dominik",
+    position: "Backend vývojář",
+    img: "./assets/new-avatars/Dominik, Backend vývojář.png",
+  },
+  {
+    name: "Lenka",
+    position: "RPA vývojář",
+    img: "./assets/new-avatars/Lenka, RPA vývojář.png",
+  },
+  {
+    name: "Jiří",
+    position: "Vývojář softwaru",
+    img: "./assets/new-avatars/Jiří, Vývojář softwaru.png",
+  },
+  {
+    name: "David",
+    position: "Vývojář",
+    img: "./assets/new-avatars/David, vývojář.png",
+  },
+  {
+    name: "Martin",
+    position: "Roboťák",
+    img: "./assets/new-avatars/Martin, Roboťák.png",
+  },
+  {
+    name: "Natali",
+    position: "UX/UI dizajnér",
+    img: "./assets/new-avatars/Natali, UXUI dizajnér.png",
+  },
+  {
+    name: "Robert",
+    position: "Architekt",
+    img: "./assets/new-avatars/Robert, Architekt.png",
+  },
+  {
+    name: "Martin",
+    position: "Reacťák",
+    img: "./assets/new-avatars/Martin, Reacťák.png",
+  },
+  {
+    name: "Petr",
+    position: "Androiďák",
+    img: "./assets/new-avatars/Petr, Androiďák.png",
+  },
+  {
+    name: "Ondra",
+    position: "Backend vývojář",
+    img: "./assets/new-avatars/Ondra, Backend vývojář.png",
+  },
+  {
+    name: "Lukáš",
+    position: "Android vývojář",
+    img: "./assets/new-avatars/Lukáš, Android vývojář.png",
   },
 ];
 
