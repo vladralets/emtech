@@ -11,7 +11,7 @@ const avatars = [
   },
   {
     name: "Hanča",
-    position: "vývojář",
+    position: "Vývojářka",
     img: "./assets/new-avatars/Hanča, vývojář.png",
   },
   {
@@ -31,7 +31,7 @@ const avatars = [
   },
   {
     name: "Silvi",
-    position: "UX",
+    position: "UX/UI dizajnérka",
     img: "./assets/new-avatars/Silvi, UX.png",
   },
   {
@@ -41,7 +41,7 @@ const avatars = [
   },
   {
     name: "Míra",
-    position: "UX",
+    position: "UX/UI dizajnérka",
     img: "./assets/new-avatars/Míra, UX.png",
   },
   {
@@ -60,6 +60,11 @@ const avatars = [
     img: "./assets/new-avatars/Honza, Vývojář počítačového vidění.png",
   },
   {
+    name: "Krista",
+    position: "Datová analytička",
+    img: "./assets/new-avatars/Krista, Datová analytička.png",
+  },
+  {
     name: "Tom",
     position: "Tester",
     img: "./assets/new-avatars/Tom, Tester.png",
@@ -71,7 +76,7 @@ const avatars = [
   },
   {
     name: "Magdaléna",
-    position: "Vývojář",
+    position: "Vývojářka",
     img: "./assets/new-avatars/Magdaléna, Vývojář.png",
   },
   {
@@ -86,7 +91,7 @@ const avatars = [
   },
   {
     name: "Táňa",
-    position: "RPA vývojář",
+    position: "RPA vývojářka",
     img: "./assets/new-avatars/Táňa, RPA vývojář.png",
   },
   {
@@ -106,7 +111,7 @@ const avatars = [
   },
   {
     name: "Mirka",
-    position: "UX/UI dizajnér",
+    position: "UX/UI dizajnérka",
     img: "./assets/new-avatars/Mirka, UXUI dizajnér.png",
   },
   {
@@ -121,7 +126,7 @@ const avatars = [
   },
   {
     name: "Jana",
-    position: "UX/UI dizajnér",
+    position: "UX/UI dizajnérka",
     img: "./assets/new-avatars/Jana, UXUI dizajnér.png",
   },
   {
@@ -146,7 +151,7 @@ const avatars = [
   },
   {
     name: "Lenka",
-    position: "RPA vývojář",
+    position: "RPA vývojářka",
     img: "./assets/new-avatars/Lenka, RPA vývojář.png",
   },
   {
@@ -166,7 +171,7 @@ const avatars = [
   },
   {
     name: "Natali",
-    position: "UX/UI dizajnér",
+    position: "UX/UI dizajnérka",
     img: "./assets/new-avatars/Natali, UXUI dizajnér.png",
   },
   {
