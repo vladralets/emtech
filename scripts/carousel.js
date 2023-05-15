@@ -41,7 +41,7 @@ const avatars = [
   },
   {
     name: "Míra",
-    position: "UX/UI dizajnérka",
+    position: "UX/UI dizajnér",
     img: "./assets/new-avatars/Míra, UX.png",
   },
   {
