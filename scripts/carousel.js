@@ -89,6 +89,56 @@ const avatars = [
     position: "RPA vývojář",
     img: "./assets/new-avatars/Táňa, RPA vývojář.png",
   },
+  {
+    name: "Dan",
+    position: "Backend vývojář",
+    img: "./assets/new-avatars/Dan, Backend vývojář.png",
+  },
+  {
+    name: "Martin",
+    position: "Technický projekťák",
+    img: "./assets/new-avatars/Martin, Technický projekťák.png",
+  },
+  {
+    name: "Jirka",
+    position: "AI/ML Jedi",
+    img: "./assets/new-avatars/Jirka, AIML Jedi.png",
+  },
+  {
+    name: "Mirka",
+    position: "UX/UI dizajnér",
+    img: "./assets/new-avatars/Mirka, UXUI dizajnér.png",
+  },
+  {
+    name: "Adam",
+    position: "Flutter vývojář",
+    img: "./assets/new-avatars/Adam, Flutter vývojář.png",
+  },
+  {
+    name: "Adam",
+    position: "Flutter vývojář",
+    img: "./assets/new-avatars/Adam, Flutter vývojář.png",
+  },
+  {
+    name: "Přemek",
+    position: "UX kapitán",
+    img: "./assets/new-avatars/Přemek, UX kapitán.png",
+  },
+  {
+    name: "Jana",
+    position: "UX/UI dizajnér",
+    img: "./assets/new-avatars/Jana, UXUI dizajnér.png",
+  },
+  {
+    name: "Jirka",
+    position: "Vývojář",
+    img: "./assets/new-avatars/Jirka, Vývojář.png",
+  },
+  {
+    name: "Pavel",
+    position: "Vývojář",
+    img: "./assets/new-avatars/Pavel, Vývojář.png",
+  },
 ];
 
 const carouselDiv = document.querySelector(".carousel");
