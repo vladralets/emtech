@@ -373,7 +373,7 @@ body {
 
   &__item.active .thesis__icon {
     width: 365px;
-    height: 32px;
+    height: 46px;
     position: relative;
     overflow: hidden;
   }
@@ -433,7 +433,7 @@ body {
   display: none;
   width: 293px;
   margin: 0 auto;
-  padding-top: 43px;
+  padding-top: 30px;
 
   @media (max-width: 470px) {
     display: block;
@@ -509,7 +509,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    margin: 140px auto 60px;
+    margin: 45px auto 60px;
   }
 
   &__item {
@@ -656,7 +656,7 @@ body {
     line-height: 54px;
     letter-spacing: 0.12em;
     color: #ffffff;
-    margin: 0 0 100px;
+    margin: 0 0 45px;
   }
 }
 
@@ -755,7 +755,7 @@ body {
     line-height: 54px;
     letter-spacing: 0.12em;
     color: #ffffff;
-    margin-bottom:100px;
+    margin-bottom: 45px;
 
     @media (max-width: 470px) {
       font-size: 30px;

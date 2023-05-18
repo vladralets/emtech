@@ -180,6 +180,11 @@ const avatars = [
     img: "./assets/new-avatars/Robert, Architekt.png",
   },
   {
+    name: "Jakub",
+    position: "Joker",
+    img: "./assets/new-avatars/Jakub, Joker.png",
+  },
+  {
     name: "Martin",
     position: "Reacťák",
     img: "./assets/new-avatars/Martin, Reacťák.png",
