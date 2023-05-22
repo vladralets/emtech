@@ -767,8 +767,8 @@ body {
 .career__img-bg {
   background-image: url(../assets/spodni_animace_transparent.gif);
   height: 430px;
-  width: 100%;
-  margin-bottom: 20px;
+  width: 85%;
+  margin: 0 auto 20px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
