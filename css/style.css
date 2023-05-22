@@ -764,15 +764,14 @@ body {
   cursor: pointer;
   margin: 0 auto;
 }
-.career__img {
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-}
-@media (max-width: 470px) {
-  .career__img {
-    width: 100%;
-  }
+.career__img-bg {
+  background-image: url(../assets/spodni_animace_transparent.gif);
+  height: 430px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .footer {
