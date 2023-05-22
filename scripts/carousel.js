@@ -216,6 +216,7 @@ for (let i = 1; i <= 39; i++) {
   img.src = avatars[i % avatars.length].img;
   img.alt = avatars[i % avatars.length].name;
   img.classList.add("carousel__img");
+  img.loading = "lazy";
   carouselItem.appendChild(img);
 
   const itemDesc = document.createElement("div");

@@ -829,6 +829,7 @@ body {
   &__img {
     display: block;
     margin: 0 auto 80px;
+    width: 100%;
 
     @media (max-width: 470px) {
       width: 100%;
