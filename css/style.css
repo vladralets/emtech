@@ -762,12 +762,12 @@ body {
   letter-spacing: 0.1px;
   color: white;
   cursor: pointer;
-  margin: 0 auto 50px;
+  margin: 0 auto;
 }
 .career__img {
   display: block;
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
 }
 @media (max-width: 470px) {
   .career__img {
