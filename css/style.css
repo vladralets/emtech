@@ -166,6 +166,7 @@ body {
   line-height: 58px;
   margin-top: 180px;
   letter-spacing: 0.22em;
+  margin-bottom: 0;
 }
 @media (max-width: 470px) {
   .about__title {
@@ -190,7 +191,6 @@ body {
 }
 .about__img {
   width: 860px;
-  margin-bottom: 20px;
 }
 @media (max-width: 470px) {
   .about__img {
