@@ -773,6 +773,12 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 470px) {
+  .career__img-bg {
+    height: 135px;
+    line-height: 100%;
+  }
+}
 
 .footer {
   background: #0c0736;
