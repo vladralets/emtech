@@ -48,7 +48,7 @@ links.forEach(link => {
     const targetSection = document.querySelector(targetId);
     const headerHeight = document.querySelector('.header-scroll').offsetHeight;
     const targetPosition = targetSection.offsetTop - headerHeight;
-    console.log(targetSection.offsetTop, headerHeight, targetPosition);
+    console.log({targetPosition, headerHeight})
     window.scrollTo({
       top: targetPosition,
       behavior: 'smooth'
@@ -65,8 +65,9 @@ headerLinks.forEach(link => {
     const targetSection = document.querySelector(targetId);
     const headerHeight = document.querySelector('.header-scroll').offsetHeight;
     const targetPosition = targetSection.offsetTop - headerHeight;
+    console.log({targetPosition, headerHeight})
     window.scrollTo({
-      top: targetPosition,
+      top: targetPosition + 5,
       behavior: 'smooth'
     });
   });
