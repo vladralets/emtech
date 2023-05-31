@@ -482,53 +482,7 @@ body {
     letter-spacing: 0.22em;
     white-space: nowrap;
   }
-
-  // &__header {
-  //   background: linear-gradient(269.07deg, #E31937 1.75%, #5236AB 98.3%);
-  //   border: 1px solid #D4D2E3;
-  //   border-radius: 15px;
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
-  //   padding: 13px 24px 13px 19px;
-  //   color: white;
-  //   font-weight: 700;
-  //   font-size: 14px;
-  //   line-height: 17px;
-  //   letter-spacing: 0.22em;
-  //   text-transform: uppercase;
-  // }
-
-  //   // &__icon {
-  //   //   transition: transform 0.3s ease-in-out;
-  //   //   font-weight: 300;
-  //   // }
-
-  //   // &__content {
-  //   //   display: none;
-  //   //   border: 1px solid #D4D2E3;
-  //   //   border-radius: 15px;
-  //   //   padding: 17px 22px;
-  //   //   margin-top: 4px;
-  //   //   letter-spacing: 0.08em;
-  //   //   color: #03001F;
-  //   //   font-size: 13px;
-  //   //   line-height: 22px;
-  //   //   transition: all 0.3s ease-in-out;
-  //   // }
 }
-
-// .thesis-mob__item.active .thesis-mob__content {
-//   display: block;
-// }
-
-// .thesis-mob__item.active .thesis-mob__icon {
-//   transform: rotate(90deg);
-// }
-
-// .thesis-mob__item.active .thesis-mob__header {
-//   background: linear-gradient(269.09deg, #5236AB 2.07%, #5236AB 98.94%);
-// }
 
 .news {
   @media (max-width: 470px) {
@@ -866,15 +820,6 @@ body {
     margin: 0 auto;
   }
 
-  // &__img {
-  //   display: block;
-  //   margin: 0 auto;
-  //   width: 80%;
-
-  //   @media (max-width: 470px) {
-  //     width: 100%;
-  //   }
-  // }
   &__img-bg {
     background-image: url(../assets/spodni_animace_transparent.gif);
     height: 430px;
