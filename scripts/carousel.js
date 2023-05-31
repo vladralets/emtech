@@ -120,6 +120,11 @@ const avatars = [
     img: "./assets/new-avatars/Adam, Flutter vývojář.png",
   },
   {
+    name: "Michal",
+    position: "Frontend vývojář",
+    img: "./assets/new-avatars/Michal, Frontend vývojář.png",
+  },
+  {
     name: "Přemek",
     position: "UX kapitán",
     img: "./assets/new-avatars/Přemek, UX kapitán.png",
@@ -195,20 +200,22 @@ const avatars = [
     img: "./assets/new-avatars/Petr, Androiďák.png",
   },
   {
-    name: "Ondra",
-    position: "Backend vývojář",
-    img: "./assets/new-avatars/Ondra, Backend vývojář.png",
-  },
-  {
     name: "Lukáš",
     position: "Android vývojář",
     img: "./assets/new-avatars/Lukáš, Android vývojář.png",
   },
+  {
+    name: "Ondra",
+    position: "Backend vývojář",
+    img: "./assets/new-avatars/Ondra, Backend vývojář.png",
+  },
 ];
+
+console.log(avatars.length)
 
 const carouselDiv = document.querySelector(".carousel");
 
-for (let i = 1; i <= 39; i++) {
+for (let i = 1; i <= 42; i++) {
   const carouselItem = document.createElement("div");
   carouselItem.classList.add("carousel__item");
 
