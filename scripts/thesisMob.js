@@ -1,4 +1,4 @@
-const items = document.querySelectorAll('.thesis-mob__item');
+const items = document.querySelectorAll('.thesis-mob__item-big');
 
 items.forEach(item => {
   const header = item.querySelector('.thesis-mob__header');
