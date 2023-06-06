@@ -562,6 +562,8 @@ body {
   }
 
   &__item {
+    display: block;
+    text-decoration: none;
     width: 240px;
     padding: 56px 32px;
     border: 2px solid transparent;
@@ -649,6 +651,8 @@ body {
   }
 
   &__item {
+    display: block;
+    text-decoration: none;
     padding: 56px 32px;
     border: 2px solid transparent;
     border-image: linear-gradient(to bottom, #e31937, #5236ab) 2;
@@ -676,6 +680,8 @@ body {
 
   &__button {
     color: #ffffff;
+    text-decoration: none;
+    text-align: center;
     font-weight: 600;
     line-height: 20px;
     padding: 10px 0;

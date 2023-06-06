@@ -516,6 +516,8 @@ body {
   margin: 45px auto 60px;
 }
 .news__item {
+  display: block;
+  text-decoration: none;
   width: 240px;
   padding: 56px 32px;
   border: 2px solid transparent;
@@ -595,6 +597,8 @@ body {
   margin: 0 auto 25px;
 }
 .news-mob__item {
+  display: block;
+  text-decoration: none;
   padding: 56px 32px;
   border: 2px solid transparent;
   -o-border-image: linear-gradient(to bottom, #e31937, #5236ab) 2;
@@ -620,6 +624,8 @@ body {
 }
 .news-mob__button {
   color: #ffffff;
+  text-decoration: none;
+  text-align: center;
   font-weight: 600;
   line-height: 20px;
   padding: 10px 0;
