@@ -1,3 +1,5 @@
+const url = "https://emtech-web-strapi.devops-garden.cgistodulky.cz";
+
 // Header Scroll 
 
 const logo = document.querySelector('#logo-white');
@@ -102,17 +104,111 @@ items.forEach(item => {
   });
 });
 
+// News section
+
+function createNewsStructure(data) {
+  const newsContainer = document.createElement('div');
+  newsContainer.classList.add('news__wrapper',  'container');
+
+  data.forEach(item => {
+    const newsItem = document.createElement('a');
+    newsItem.href = item.attributes.link;
+    newsItem.target = '_blank';
+    newsItem.classList.add('news__item');
+
+    const newsTitle = document.createElement('h3');
+    newsTitle.classList.add('news__title');
+    newsTitle.textContent = item.attributes.title;
+
+    const newsDescription = document.createElement('p');
+    newsDescription.classList.add('news__description');
+    newsDescription.textContent = item.attributes.content;
+
+    newsItem.appendChild(newsTitle);
+    newsItem.appendChild(newsDescription);
+
+    newsContainer.appendChild(newsItem);
+});
+
+return newsContainer;
+}
+
+function createNewsMobStructure(data) {
+  const newsMobWrapper = document.createElement('div');
+  newsMobWrapper.classList.add('news-mob__wrapper');
+
+  data.forEach(item => {
+    const newsItem = document.createElement('div');
+    newsItem.classList.add('news-mob__item');
+
+    const newsTitle = document.createElement('h3');
+    newsTitle.classList.add('news-mob__title');
+    newsTitle.textContent = item.attributes.title;
+
+    const newsDescription = document.createElement('p');
+    newsDescription.classList.add('news-mob__description');
+    newsDescription.textContent = item.attributes.content;
+
+    const newsLink = document.createElement('a');
+    newsLink.classList.add('news-mob__button');
+    newsLink.textContent = 'Chci vědět víc';
+    newsLink.href = item.attributes.link;
+    newsLink.target = '_blank';
+
+    newsItem.appendChild(newsTitle);
+    newsItem.appendChild(newsDescription);
+    newsItem.appendChild(newsLink);
+
+    // Append each news-mob__item to the news-mob__wrapper
+    newsMobWrapper.appendChild(newsItem);
+  });
+
+  return newsMobWrapper;
+}
+
+const getNewsData = async () => {
+  const response = await fetch(`${apiUrl}/api/news`);
+  const data = await response.json();
+  return data;
+};
+
+getNewsData().then((data) => {
+  const newsData = data.data;
+  console.log(newsData);
+  const newsContainer = createNewsStructure(newsData);
+  const mobNewsContainer = createNewsMobStructure(newsData);
+  const news = document.querySelector('.news');
+  const newsMob = document.querySelector('.news-mob');
+  news.appendChild(newsContainer);
+  newsMob.appendChild(mobNewsContainer);
+}); 
+
+[{id: 1, attributes: {title: 'title', content: 'description', link: '/sdf/'}}, {id: 2, attributes: {title: 'title', content: 'description', link: '/sdf/'}}]
+
+
+
+
 // Team section
 
-const carouselDiv = document.querySelector(".carousel");
+const getTeamData = async () => {
+  const response = await fetch(`${url}/api/team-members?populate=*`);
+  console.log("getTeamData", response);
+  const data = await response.json();
+  return data;
+};
 
-for (let i = 1; i <= 42; i++) {
+getTeamData().then((data) => {
+  const carouselDiv = document.querySelector(".carousel");
+
+  const members = data.data
+
+for (let i = 1; i <= avatars.length; i++) {
   const carouselItem = document.createElement("div");
   carouselItem.classList.add("carousel__item");
 
   const img = document.createElement("img");
-  img.src = avatars[i % avatars.length].img;
-  img.alt = avatars[i % avatars.length].name;
+  img.src = `${url}${members[i % members.length].attributes.avatar.data[0].attributes.url}`;
+  img.alt = members[i % members.length].attributes.name;
   img.classList.add("carousel__img");
   img.loading = "lazy";
   carouselItem.appendChild(img);
@@ -122,12 +218,12 @@ for (let i = 1; i <= 42; i++) {
 
   const name = document.createElement("p");
   name.classList.add("carousel__name");
-  name.textContent = avatars[i % avatars.length].name;
+  name.textContent = members[i % members.length].attributes.name;
   itemDesc.appendChild(name);
 
   const position = document.createElement("p");
   position.classList.add("carousel__position");
-  position.textContent = avatars[i % avatars.length].position;
+  position.textContent = members[i % members.length].attributes.position;
   itemDesc.appendChild(position);
 
   carouselItem.appendChild(itemDesc);
@@ -172,3 +268,41 @@ $(document).ready(function(){
 
   });
 });
+});
+
+
+const getCareersData = async () => {
+  const response = await fetch(`${url}/api/open-positions`);
+  console.log('getCareersData: ', response);
+  const data = await response.json();
+  return data;
+};
+
+getCareersData().then((data) => {
+  const careerContainer = document.querySelector(".career__container");
+  
+  function createDiv() {
+    const div = document.createElement("div");
+    div.classList.add("career__group");
+    careerContainer.appendChild(div);
+    return div;
+  }
+
+  let currentDiv = createDiv();
+
+  data.data.forEach((position, index) => {
+    if (index % 3 === 0 && index !== 0) {
+      currentDiv = createDiv();
+    }
+
+    const career = document.createElement("a");
+    career.classList.add("career__link");
+    career.setAttribute("href", position.attributes.link);
+    career.setAttribute("target", "_blank");
+    career.innerText = position.attributes.positionName;
+
+    currentDiv.appendChild(career);
+  });
+});
+
+
